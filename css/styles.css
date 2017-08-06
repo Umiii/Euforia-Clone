@@ -22,27 +22,26 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
-
 .outer-container{
   display: flex;
   flex-direction: column;
 }
 .main-nav{
   border: 1px solid #000; 
-  width: 100%;
-  height: 15vh;
-  display: flex;
-  flex-direction: row;
+  width: 100%; height: 15vh;
+  display: flex; flex-direction: row;
   justify-content: space-between;
 }
 .brand-image{
   border: 1px solid #00F;
   width: 27%; height: 100%;
 }
-.nav-list{
-  border: 1px solid #361;
-  width: 22%; height: 100%;
+.nav-list {
+    border: 1px solid #361;
+    width: 22%;
+    height: 100%;
 }
+
 .social, .trademark{
   display: none;
 }
