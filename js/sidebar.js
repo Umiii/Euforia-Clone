@@ -10,7 +10,7 @@ const navList = document.querySelector(".nav-list");
 
 
 navButton.addEventListener('click', function() {
-    var width = document.documentElement.clientWidth;
+    var width = document.documentElement.clientWidth;   /* gets the width of the browser window */
     if (width > 1024) {
         if (sliderNav.style.left == "" || sliderNav.style.left === "-555px") {
             sliderNav.style.left = "0px";
@@ -34,6 +34,8 @@ navButton.addEventListener('click', function() {
     }
 });
 
+
+/* The following function closes the slider menu on desktop */
 angleLeft.addEventListener('click', function(){
     var width = document.documentElement.clientWidth;
     if (width > 1024) {
@@ -44,6 +46,10 @@ angleLeft.addEventListener('click', function(){
     }
 });
 
+
+/* If window is resized adjust navigation accordingly
+*  depending on the width
+*/
 window.addEventListener('resize', function(){
     var width = document.documentElement.clientWidth;
     if (width > 1024)
